@@ -1,0 +1,16 @@
+body {
+    background-color: #ffdd90;
+    background-image: url("ra.jpg");
+  }
+legend{
+
+    background-color:green;
+    border: solid 10px yellow;}
+    
+    
+
+fieldset{
+    background-image:url("fondo.jpg");
+    height: 800px;
+    
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Notas</title>
+  
+<link href="registro.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <center><h1 class = "titulo">CALCULO DE PROMEDIO DE NOTAS  </h1></center>
+    
+    <div class = "estilo"></div>
+    <center><form>
+        <label>INGRESAR NOMBRES : </label>
+        <input type = "text" name = "" id = "nombre"> <br> <br>
+        <label>INGRESAR APELLIDOS : </label>
+        <input type = "text" name = "" id = "apellido"><br><br>
+        <label>NOTA  DE CURSO 1 : </label>
+        <input type = "number" name = "" id = "n1"> <br> <br>
+        <label>NOTA DE CURSO 2 : </label>
+        <input type = "number" name = "" id = "n2"><br><br>    
+        <label>NOTA DE CURSO 3 : </label>
+        <input type = "number" name = "" id = "n3"><br><br> 
+        <label>NOTA DE CURSO 4 : </label>
+        <input type = "number" name = "" id = "n4"><br><br>    
+        <label>NOTA DE CURSO 5 : </label>
+        <input type = "number" name = "" id = "n5"><br><br>
+        <label>NOTA DE CURSO 6 : </label>
+        <input type = "number" name = "" id = "n6"><br><br>    
+    </form></center>
+</div>
+<div id = "ejemplo">
+        
+</div> <br>
+<center><button onclick="alerta()">Click para ver promedio</button></center>
+<script>
+function alerta () { 
+        var men 
+        var n1= parseInt(document.getElementById("n1").value);
+        var n2= parseInt(document.getElementById("n2").value);
+        var n3= parseInt(document.getElementById("n3").value);
+        var n4= parseInt(document.getElementById("n4").value);
+        var n5= parseInt(document.getElementById("n5").value);
+        var n6= parseInt(document.getElementById("n6").value);
+        var p = (n1+n2+n3+n4+n5+n6)/6;
+        if (p>= 13 ){ 
+        men =  "ESTUDIANTE APROBADO " 
+       } else {
+         men = "ESTUDIANTE DESAPROBADO";
+      }document.getElementById('ejemplo').innerText = " El promedio es : " + p+ "  y  " + men;
+
+      }
+    
+      </script>
+</body>
+</html>
